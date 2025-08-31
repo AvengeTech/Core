@@ -1,0 +1,17 @@
+name: Core
+description: AvengeTech Core plugin
+author: mal0ne_23
+version: 2.1.0
+api: [5.0.0]
+main: core\Core
+load: STARTUP
+permissions:
+  core.perm:
+    description: We aren't using any other permissions because that's lame.
+    default: true
+  core.staff:
+    description: Jk I lied
+    default: op
+  core.tier3:
+    description: Lul
+    default: op

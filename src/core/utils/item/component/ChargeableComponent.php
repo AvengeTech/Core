@@ -1,0 +1,29 @@
+<?php
+
+namespace core\utils\item\component;
+
+/**
+ * From Customies
+ */
+final class ChargeableComponent implements ItemComponent {
+
+	private float $movementModifier;
+
+	public function __construct(float $movementModifier) {
+		$this->movementModifier = $movementModifier;
+	}
+
+	public function getName(): string {
+		return "minecraft:chargeable";
+	}
+
+	public function getValue(): array {
+		return [
+			"movement_modifier" => $this->movementModifier
+		];
+	}
+
+	public function isProperty(): bool {
+		return false;
+	}
+}
